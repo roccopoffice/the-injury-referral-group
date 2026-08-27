@@ -1,6 +1,8 @@
 {
   "name": "irg",
   "compatibility_date": "2026-08-26",
+  "workers_dev": true,
+  "preview_urls": true,
   "assets": {
     "directory": "./public"
   }
