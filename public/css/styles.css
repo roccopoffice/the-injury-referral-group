@@ -86,6 +86,10 @@ textarea {
   line-height: 0;
 }
 
+.brand picture {
+  display: block;
+}
+
 .brand img {
   width: auto;
   height: 46px;
@@ -97,7 +101,7 @@ textarea {
 
 .brand-lg img {
   height: auto;
-  width: clamp(272px, 40vw, 430px);
+  width: clamp(240px, 68vw, 430px);
   margin-inline: auto;
 }
 
@@ -1043,11 +1047,20 @@ form.is-sent {
   }
 
   .brand img {
-    height: 34px;
+    height: 40px;
   }
 
   .brand-footer img {
-    height: 38px;
+    height: auto;
+    width: min(272px, 76vw);
+  }
+}
+
+/* Below this width the wide lockup's wordmark is too small to read, so the
+   header swaps to the IRG monogram (see the <picture> element in the markup). */
+@media (max-width: 620px) {
+  .brand img {
+    height: 42px;
   }
 }
 
